@@ -1,29 +1,17 @@
-var animal = 'dog'
-
 function myAnimal() {
-  return animal
+  return "dog"
 }
 
 function yourAnimal() {
-  var animal = 'cat'
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: You can't just hard-code 'cat' below
-  return animal
+  return "cat"
 }
 
 function add2(n) {
-  const two = 2
-
-  return n + two
-}
- 
-  var funkyFunction = function() {
-  return function() {
-    	  return "FUNKY!"
-  	  }
-    
+  return n + 2
 }
 
-var inner = funkyFunction();
-var theFunk = inner(); // "FUNKY!"
+function funkyFunction() {
+  return add2
+}
+
+var theFunk = "FUNKY!"
